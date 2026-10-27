@@ -1,0 +1,6 @@
+{
+  "name": "Escuela Segura",
+  "description": "Aplicación interactiva para la prevención de conflictos y seguridad escolar basada en el prototipo móvil Escuela Segura.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
