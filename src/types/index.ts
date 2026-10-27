@@ -17,6 +17,11 @@ export interface UserProfile {
   phone?: string;
 }
 
+export interface RegisteredAccount extends UserProfile {
+  password: string;
+  createdAt: string;
+}
+
 export type IncidentUrgency = 'baja' | 'moderada' | 'alta';
 
 export interface VideoEvidence {

@@ -286,8 +286,13 @@ export default function App() {
       <AuthModal
         isOpen={isAuthOpen}
         currentUser={currentUser}
-        onClose={() => setIsAuthOpen(false)}
+        onClose={() => {
+          if (currentUser) {
+            setIsAuthOpen(false);
+          }
+        }}
         onLoginSuccess={handleUserLogin}
+        onLogout={handleLogout}
       />
 
       {/* Reference Modal for Original Prototype Inspection */}
